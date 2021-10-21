@@ -49,4 +49,8 @@ export class AppComponent implements OnInit{
   }
   public onAddBook(addForm: NgForm):void {
   }
+
+  public consoleLog():void {
+    console.log('hej');
+  }
 }
