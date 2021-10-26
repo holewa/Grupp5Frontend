@@ -21,10 +21,8 @@ export class BookService {
     return this.http.get<string>("http://localhost:8080/", {headers, responseType: 'text' as 'json' });
   }
 
-    public getBooks(token: string): Observable<Book[]> {
-        let tokenStr = 'Bearer ' + token;
-        const headers = new HttpHeaders().set('Authorization', tokenStr);
-        return this.http.get<Book[]>(`${this.apiServerUrl}/api/book/findall`, {headers, responseType: 'text' as 'json' });
+    public getBooks(): Observable<Book[]> {
+        return this.http.get<Book[]>(`${this.apiServerUrl}/api/book/findall`);
     }
 
     public addBook(book: Book, token: string): Observable<Book[]> {

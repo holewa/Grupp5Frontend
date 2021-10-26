@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
     console.log(this.books)
   }
 
-  public getBooks(token:string) : void {
+  public getBooks() : void {
     this.bookService.getBooks().subscribe(
       (response: Book[]) => {
         this.books = response
