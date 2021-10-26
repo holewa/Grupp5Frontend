@@ -30,18 +30,19 @@
           </div>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Isbn : <a href="#">{{book?.isbn}}</a>
-          </li>
-          <li class="list-group-item"><i class="fa fa-phone float-right"></i>Genre : {{book?.genre}}</li>
+          <li class="list-group-item">Isbn : {{book?.isbn}}</li>
+          <li class="list-group-item">Genre : {{book?.genre}}</li>
+          <li class="list-group-item">Rating : {{book?.rating}}</li>
+          <li class="list-group-item">Published : {{book?.publishYear}}</li>
         </ul>
-        <div class="card-body">
+        <!-- <div class="card-body">
           <div class="float-right btn-group btn-group-sm">
             <a (click)="onOpenModal(book, 'edit')" class="btn btn-primary tooltips" data-placement="top"
               data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
             <a (click)="onOpenModal(book, 'delete')" class="btn btn-secondary tooltips" data-placement="top"
               data-original-title="Delete"><i class="fa fa-times"></i></a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
